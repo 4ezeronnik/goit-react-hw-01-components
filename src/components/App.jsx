@@ -5,7 +5,7 @@ import data from './data.json';
 
 export default function App () {
   return (
-    <section>
+    <div>
       <div>
     <Profile
       username={user.username}
@@ -18,7 +18,7 @@ export default function App () {
       <div>
         <Statistics title="Upload stats" stats={data} /> 
       </div>
-    </section>
+    </div>
    
   );
   
