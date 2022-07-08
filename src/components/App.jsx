@@ -1,15 +1,16 @@
 import Profile from "../components/Profile/ Profile";
 import Statistics from "../components/Statistics/Statistics"
-import FriendList from "../components/FriendListItem";
+import FriendList from "../components/FriendList/FriendList";
 import user from './user.json';
 import data from './data.json';
 import friends from './friends.json';
 
 
+
 export default function App () {
   return (
     <>
-      <div>
+
     <Profile
       username={user.username}
       tag={user.tag}
@@ -17,11 +18,13 @@ export default function App () {
       avatar={user.avatar}
       stats={user.stats}
       />
-      </div>
-      <div>
-        <Statistics title="Upload stats" stats={data} /> 
-      </div>
-      <FriendList friends={friends} />;
+
+    <Statistics
+        title="Upload stats" stats={data} /> 
+      
+    <FriendList
+        friends={friends} />
+      
     </>
    
   );
