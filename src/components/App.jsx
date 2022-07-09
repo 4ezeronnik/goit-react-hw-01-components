@@ -10,9 +10,12 @@ import transactions from './transactions.json';
 
 
 
+
 export default function App () {
   return (
-    <>
+    <div
+      className="container"      
+    >
 
     <Profile
       username={user.username}
@@ -30,7 +33,7 @@ export default function App () {
       
       <TransactionHistory items={transactions} />
       
-    </>
+    </div>
    
   );
   
