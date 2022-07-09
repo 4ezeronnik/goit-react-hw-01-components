@@ -1,0 +1,10 @@
+.status {
+  padding: 0px 9px;
+  border-radius: 8px;
+  background-color: green;
+}
+
+.isNotActive {
+  composes: status;
+  background-color: red;
+}
